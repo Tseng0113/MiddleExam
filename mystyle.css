@@ -10,6 +10,8 @@ body {
 header {
     background-color: #d4a373;
     color: #582f01;
+    font-family: Brush Script MT, Brush Script Std, cursive;
+    font-size: x-large;
     margin: 0px;
     padding: 20px;
 }
@@ -46,6 +48,7 @@ footer {
 
 main {
     padding: 20px;
+    display: flex;
 }
 
 article {
@@ -54,6 +57,9 @@ article {
     text-align: center;
     background-color: #e9edc9;
     border-radius: 50px;
+    order: 1;
+    flex-grow: 1;
+    margin-right: 2%;
 }
 
 .self {
@@ -83,6 +89,8 @@ aside {
     text-align: center;
     background-color: #e9edc9;
     border-radius: 50px;
+    order: 2;
+    flex-grow: 4;
 }
 
 
