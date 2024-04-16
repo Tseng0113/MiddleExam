@@ -51,7 +51,7 @@ main {
     display: flex;
 }
 
-article {
+.article1 {
     float: left;
     width: 60%;
     text-align: center;
@@ -83,7 +83,7 @@ article {
     border-radius: 20px;
 }
 
-aside {
+.aside1 {
     float: right;
     width: 38%;
     text-align: center;
@@ -93,6 +93,26 @@ aside {
     flex-grow: 4;
 }
 
+.article2 {
+    float: left;
+    width: 49%;
+    text-align: center;
+    background-color: #e9edc9;
+    border-radius: 50px;
+    order: 1;
+    flex-grow: 1;
+    margin-right: 2%;
+}
+
+.aside2 {
+    float: right;
+    width: 49%;
+    text-align: center;
+    background-color: #e9edc9;
+    border-radius: 50px;
+    order: 2;
+    flex-grow: 4;
+}
 
 .clearfix {
     clear: both;
