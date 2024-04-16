@@ -26,3 +26,9 @@ nav {
     background-color: #faedcd;
     text-align: center;
 }
+
+nav a {
+    display: inline-block;
+    padding: 18px 10px;
+}
+
