@@ -21,3 +21,8 @@ header {
 .motto {
     text-align: right;
 }
+
+nav {
+    background-color: #faedcd;
+    text-align: center;
+}
