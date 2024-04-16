@@ -70,10 +70,11 @@ article {
     padding: 20px 20px 0px 0px;
 }
 
-.img {
+.photo {
     float: left;
     width: 300px;
     padding: 20px;
+    border-radius: 20px;
 }
 
 aside {
