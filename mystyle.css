@@ -32,3 +32,60 @@ nav a {
     padding: 18px 10px;
 }
 
+nav a:hover {
+    background-color: #faedcd;
+    color: white;
+}
+
+footer {
+    background-color: #ccd5ae;
+    color: #606c38;
+    text-align: center;
+    padding: 10px;
+}
+
+main {
+    padding: 20px;
+}
+
+article {
+    float: left;
+    width: 60%;
+    text-align: center;
+    background-color: #e9edc9;
+    border-radius: 50px;
+}
+
+.self {
+    width: 800px;
+    margin: 50px auto;
+    border:solid 1px #e9edc9;
+    overflow: hidden;
+}
+
+.text {
+    float: right;
+    text-align: left;
+    width: 430px;
+    padding: 20px 20px 0px 0px;
+}
+
+.img {
+    float: left;
+    width: 300px;
+    padding: 20px;
+}
+
+aside {
+    float: right;
+    width: 38%;
+    text-align: center;
+    background-color: #e9edc9;
+    border-radius: 50px;
+}
+
+
+.clearfix {
+    clear: both;
+}
+
