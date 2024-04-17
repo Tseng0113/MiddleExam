@@ -104,6 +104,66 @@ main {
     margin-right: 2%;
 }
 
+@property --percentage{
+    syntax: "<number>";
+    inherits: true;
+    initial-value: 0;
+}
+  
+@keyframes pieAni {
+    from {
+      --percentage: 0;
+    }
+}
+  
+.pie {
+    width: 150px;
+    aspect-ratio: 1;
+    display: inline-grid;
+    place-content: center;
+    margin: 5px;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: sans-serif;
+    position: relative;
+}
+
+.pie::before{
+    content: "";
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+    inset: 0;
+    background: conic-gradient(var(--color) calc(var(--percentage) * 1%),#0000 0%), #eee;
+    -webkit-mask-image: radial-gradient(farthest-side,#0000 calc(100% - 10px),#000 calc(100% - 10px));
+    mask-image: radial-gradient(farthest-side,#0000 calc(100% - 10px),#000 calc(100% - 10px));
+}
+
+.pie.ani{
+    animation-name: pieAni;
+    animation-duration: 2s;
+    animation-fill-mode: both;
+}
+
+.percentage {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #333;
+}
+
+.pie-container {
+    flex: 0 0 calc(100% / 3 - 40px);
+    margin: 20px;
+    text-align: center;
+}
+
+.pie-location {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 .aside2 {
     float: right;
     width: 49%;
