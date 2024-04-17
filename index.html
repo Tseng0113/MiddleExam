@@ -7,23 +7,6 @@
     <link rel="stylesheet" href="mystyle.css">
 </head>
 <body>
-    <button onclick="topFunction()" id="topBtn" title="Go to top">Top</button>
-    <%
-        window.onscroll = function() {scrollFunction()};
-        function scrollFunction() {
-            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                document.getElementById("topBtn").style.display = "block";
-            } 
-            else {
-                document.getElementById("topBtn").style.display = "none";
-            }
-        }
-        function topFunction() {
-            document.body.scrollTop = 0; // For Safari
-            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-        }
-    %>
-
     <header>
         <h1 class="title">Tseng's Resume</h1>
         <h2 class="motto">There is a crack in everything, that's how the light gets in.</h2>
@@ -263,5 +246,8 @@
         <h5>Copyrgiht @ 2024 All rights reserved</h5>
         <h5>phone:0916460979</h5>
     </footer>
+    <button onclick="topFunction()" id="topBtn" title="Go to top">
+        <img src="path/to/your/image.png" alt="Top">
+    </button>
 </body>
 </html>
