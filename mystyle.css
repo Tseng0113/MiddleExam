@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Covered+By+Your+Grace&family=Dancing+Script:wght@700&family=Indie+Flower&family=Kalam:wght@300;400;700&family=Kaushan+Script&family=Lobster&family=Over+the+Rainbow&family=Pacifico&family=Sansita+Swashed:wght@900&family=Satisfy&family=Shadows+Into+Light&family=Zeyada&display=swap');
+
 * {
     box-sizing: border-box;
 }
@@ -10,23 +12,32 @@ body {
 header {
     background-color: #d4a373;
     color: #582f01;
-    font-family: Brush Script MT, Brush Script Std, cursive;
-    font-size: x-large;
     margin: 0px;
     padding: 20px;
 }
 
 .title {
     text-align: left;
+    padding-left: 60px;
+    font-family: "Sansita Swashed", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
 }
 
 .motto {
     text-align: right;
+    font-family: "Kalam", cursive;
+    font-weight: 700;
+    font-style: normal;
 }
 
 nav {
     background-color: #faedcd;
     text-align: center;
+    font-family: "Kalam", cursive;
+    font-weight: 700;
+    font-style: normal;
 }
 
 nav a {
@@ -60,27 +71,53 @@ main {
     order: 1;
     flex-grow: 1;
     margin-right: 2%;
+    font-family: "Kalam", cursive;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .self {
-    width: 800px;
-    margin: 50px auto;
-    border:solid 1px #e9edc9;
-    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .text {
-    float: right;
+    flex: 1;
     text-align: left;
-    width: 430px;
-    padding: 20px 20px 0px 0px;
+}
+
+.text ul {
+    list-style-type: circle;
+    padding-left: 60px;
+    margin: 0;
+    font-size: 18px;
 }
 
 .photo {
-    float: left;
-    width: 300px;
-    padding: 20px;
-    border-radius: 20px;
+    flex: 1;
+    text-align: center;
+}
+
+.photo img {
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+@media (max-width: 768px) {
+    .self {
+        flex-direction: column;
+    }
+
+    .text, .photo {
+        flex: none;
+        margin-bottom: 20px;
+    }
 }
 
 .aside1 {
@@ -91,6 +128,31 @@ main {
     border-radius: 50px;
     order: 2;
     flex-grow: 4;
+    font-family: "Kalam", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.education {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.education a {
+    flex: 1;
+    text-align: center;
+    margin: 10px;
+    position: relative;
+}
+
+.education a img {
+    transition: transform 0.3s ease;
+}
+
+.education a:hover img {
+    transform: scale(1.1);
 }
 
 .article2 {
@@ -102,6 +164,9 @@ main {
     order: 1;
     flex-grow: 1;
     margin-right: 2%;
+    font-family: "Kalam", cursive;
+    font-weight: 400;
+    font-style: normal;
 }
 
 @property --percentage{
@@ -122,9 +187,10 @@ main {
     display: inline-grid;
     place-content: center;
     margin: 5px;
-    font-size: 25px;
-    font-weight: bold;
-    font-family: sans-serif;
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
     position: relative;
 }
 
@@ -172,6 +238,9 @@ main {
     border-radius: 50px;
     order: 2;
     flex-grow: 4;
+    font-family: "Kalam", cursive;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .clearfix {
