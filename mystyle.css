@@ -161,6 +161,13 @@ h2 {
     transform: scale(1.1);
 }
 
+.skills {
+    text-align: center;
+    font-family: "Kalam", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
 .article2 {
     float: left;
     width: 49%;
@@ -193,9 +200,8 @@ h2 {
     display: inline-grid;
     place-content: center;
     margin: 5px;
-    font-family: "Caveat", cursive;
-    font-optical-sizing: auto;
-    font-weight: 700;
+    font-family: "Kalam", cursive;
+    font-weight: 400;
     font-style: normal;
     position: relative;
 }
@@ -247,6 +253,42 @@ h2 {
     font-family: "Kalam", cursive;
     font-weight: 400;
     font-style: normal;
+}
+
+.experience {
+    text-align: center;
+    font-family: "Kalam", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+article {
+    width: 99%;
+    text-align: center;
+    background-color: #e9edc9;
+    border-radius: 50px;
+    order: 1;
+    flex-grow: 1;
+    margin-right: 2%;
+    font-family: "Kalam", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.phychology {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.video {
+    flex: 0 0 auto;
+    margin-right: 20px;
+}
+
+.halo_effect {
+    flex: 1;
 }
 
 .clearfix {
