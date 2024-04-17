@@ -275,21 +275,48 @@ article {
     font-style: normal;
 }
 
-.phychology {
+/*.phychology {
     display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
 }
 
 .video {
-    flex: 0 0 auto;
-    margin-right: 20px;
+    flex: 1;
+    text-align: left;
+    width: 50px;
+    padding-left: 100px;
+    margin: 0;
 }
 
 .halo_effect {
     flex: 1;
+    width: 50px;
+    text-align: left;
+    padding-right: 100px;
+}*/
+
+.Factory {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.factory {
+    flex: 1;
+    text-align: left;
+    width: 50px;
+    padding-left: 100px;
+    margin: 0;
+}
+
+.factory_text {
+    flex: 1;
+    width: 50px;
+    text-align: left;
+    padding-right: 100px;
+}
+
 
 .clearfix {
     clear: both;
