@@ -60,11 +60,74 @@
         <a name="Skills"></a>
         <article class="article2">
             <h2>Programming Skills</h2>
+            <div class="pie-location">
+                <div class="pie-container">
+                    <div class="pie" style="--percentage: 70; --color: #606c38;">html</div>
+                    <div class="percentage">70%</div>
+                </div>
+                <div class="pie-container">
+                    <div class="pie" style="--percentage: 65; --color: #606c38;">CSS</div>
+                    <div class="percentage">65%</div>
+                </div>
+                <div class="pie-container">
+                    <div class="pie" style="--percentage: 40; --color: #606c38;">JSP</div>
+                    <div class="percentage">40%</div>
+                </div>
+                <div class="pie-container">
+                    <div class="pie" style="--percentage: 70; --color: #606c38;">Python</div>
+                    <div class="percentage">70%</div>
+                </div>
+                <div class="pie-container">
+                    <div class="pie" style="--percentage: 80; --color: #606c38;">C</div>
+                    <div class="percentage">80%</div>
+                </div>
+                <div class="pie-container">
+                    <div class="pie" style="--percentage: 80; --color: #606c38;">AutoCAD</div>
+                    <div class="percentage">80%</div>
+                </div>
+            </div>
         </article>
 
         <aside class="aside2">
-            <h2>Professional Skills</h2>
+            <h2>Professional Skills</h2><div class="pie-location">
+                <div class="pie-container">
+                    <div class="pie" style="--percentage: 50; --color: #606c38;">English</div>
+                    <div class="percentage">50%</div>
+                </div>
+                <div class="pie-container">
+                    <div class="pie" style="--percentage: 85; --color: #606c38;">mental arithmetic</div>
+                    <div class="percentage">85%</div>
+                </div>
+                <div class="pie-container">
+                    <div class="pie" style="--percentage: 70; --color: #606c38;">Jazz drum</div>
+                    <div class="percentage">70%</div>
+                </div>
+                <div class="pie-container">
+                    <div class="pie" style="--percentage: 100; --color: #606c38;">sleep</div>
+                    <div class="percentage">100%</div>
+                </div>
+                <div class="pie-container">
+                    <div class="pie" style="--percentage: 100; --color: #606c38;">shopping</div>
+                    <div class="percentage">100%</div>
+                </div>
+                <div class="pie-container">
+                    <div class="pie" style="--percentage: 100; --color: #606c38;">fantasy</div>
+                    <div class="percentage">100%</div>
+                </div>
+            </div>
         </aside>
+
+        <script>
+        setInterval(() => {
+            const pies = document.querySelectorAll('.pie');
+            pies.forEach(pie => {
+                pie.classList.add('ani');
+                setTimeout(() => {
+                    pie.classList.remove('ani');
+                }, 2000);
+            });
+        }, 3000);
+        </script>
 
     </main>
     <div class="clearfix"></div>
