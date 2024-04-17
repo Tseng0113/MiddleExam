@@ -34,19 +34,25 @@ header {
 
 nav {
     background-color: #faedcd;
+    border-radius: 50% 50% 50% 50% / 45% 45% 55% 55%;
+    padding: 20px;
     text-align: center;
-    font-family: "Kalam", cursive;
-    font-weight: 700;
-    font-style: normal;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    margin: 20px auto;
 }
 
 nav a {
-    display: inline-block;
-    padding: 18px 10px;
+    text-decoration: none;
+    color: #582f01;
+    margin: 0 15px; /* 調整連結之間的距離 */
+    font-family: "Kalam", cursive;
+    font-weight: 700;
+    font-style: normal;
+    transition: color 0.3s; /* 添加顏色轉換效果 */
 }
 
 nav a:hover {
-    background-color: #faedcd;
     color: white;
 }
 
