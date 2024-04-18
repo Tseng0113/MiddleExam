@@ -417,10 +417,12 @@ article {
 }
 .basketball_photo {
     flex: 1;
-    text-align: left;
-    width: 50px;
-    padding-left: 100px;
-    margin: 0;
+    text-align: center;
+    width: 50%;
+    margin-right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .basketball_photo img {
     border-radius: 50%;
