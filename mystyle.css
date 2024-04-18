@@ -337,6 +337,7 @@ article {
     width: 50px;
     padding-left: 100px;
     margin: 0;
+    margin-bottom: 20px; 
 }
 .factory_photo img {
     border-radius: 50%;
@@ -365,6 +366,7 @@ article {
     width: 50px;
     padding-left: 100px;
     margin: 0;
+    margin-bottom: 20px; 
 }
 .club_photo img {
     border-radius: 50%;
@@ -393,6 +395,7 @@ article {
     width: 50px;
     padding-left: 100px;
     margin: 0;
+    margin-bottom: 20px; 
 }
 .sport_photo img {
     border-radius: 50%;
@@ -417,12 +420,11 @@ article {
 }
 .basketball_photo {
     flex: 1;
-    text-align: center;
+    text-align: left;
     width: 50%;
-    margin-right: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding-left: 100px;
+    margin: 0;
+    margin-bottom: 20px; 
 }
 .basketball_photo img {
     border-radius: 50%;
