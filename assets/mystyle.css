@@ -1,0 +1,463 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Covered+By+Your+Grace&family=Dancing+Script:wght@700&family=Indie+Flower&family=Kalam:wght@300;400;700&family=Kaushan+Script&family=Lobster&family=Over+the+Rainbow&family=Pacifico&family=Sansita+Swashed:wght@900&family=Satisfy&family=Shadows+Into+Light&family=Zeyada&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+#topBtn {
+    display: none; /* 預設隱藏按鈕 */
+    position: fixed; /* 固定在畫面右下角 */
+    bottom: 20px;
+    right: 30px;
+    z-index: 99; /* 使按鈕顯示於其他元素之上 */
+    border: none;
+    outline: none;
+    background-color: transparent; /* 背景顏色設為透明 */
+    cursor: pointer;
+    padding: 0;
+    width: 50px; /* 設定按鈕寬度 */
+    height: 50px; /* 設定按鈕高度 */
+}
+#topBtn img {
+    width: 100%; /* 調整圖片大小以適應按鈕 */
+    height: 100%;
+}
+#topBtn:hover {
+    opacity: 0.7; /* 鼠標懸停時降低按鈕透明度 */
+}
+
+
+body {
+    background-color: #fefae0;
+    margin: 0px;
+}
+
+header {
+    background-color: #d4a373;
+    color: #582f01;
+    margin: 0px;
+    padding: 20px;
+}
+.title {
+    text-align: left;
+    padding-left: 60px;
+    font-family: "Sansita Swashed", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+}
+.motto {
+    text-align: right;
+    font-family: "Kalam", cursive;
+    font-weight: 700;
+    font-style: normal;
+}
+
+nav {
+    background-color: #faedcd;
+    border-radius: 50% 50% 50% 50% / 45% 45% 55% 55%;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    margin: 20px auto;
+}
+nav a {
+    text-decoration: none;
+    color: #582f01;
+    margin: 0 15px; /* 調整連結之間的距離 */
+    font-family: "Kalam", cursive;
+    font-weight: 700;
+    font-style: normal;
+    transition: color 0.3s; /* 添加顏色轉換效果 */
+}
+nav a:hover {
+    color: white;
+}
+
+footer {
+    background-color: #ccd5ae;
+    color: #606c38;
+    text-align: center;
+    padding: 10px;
+}
+button {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 0;
+    width: 50px;
+    height: 50px;
+}
+button img {
+    width: 100%;
+    height: 100%;
+}
+
+main {
+    padding: 20px;
+    display: flex;
+}
+
+.article1 {
+    float: left;
+    width: 60%;
+    text-align: center;
+    background-color: #e9edc9;
+    border-radius: 50px;
+    order: 1;
+    flex-grow: 1;
+    margin-right: 2%;
+    font-family: "Kalam", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.self {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text {
+    flex: 1;
+    text-align: left;
+}
+
+.text ul {
+    list-style-type: circle;
+    padding-left: 60px;
+    margin: 0;
+    font-size: 18px;
+}
+
+.photo {
+    flex: 1;
+    text-align: center;
+}
+
+.photo img {
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+@media (max-width: 768px) {
+    .self {
+        flex-direction: column;
+    }
+
+    .text, .photo {
+        flex: none;
+        margin-bottom: 20px;
+    }
+}
+
+.aside1 {
+    float: right;
+    width: 38%;
+    text-align: center;
+    background-color: #e9edc9;
+    border-radius: 50px;
+    order: 2;
+    flex-grow: 4;
+    font-family: "Kalam", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.education {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.education a {
+    flex: 1;
+    text-align: center;
+    margin: 10px;
+    position: relative;
+}
+
+.education a img {
+    transition: transform 0.3s ease;
+}
+
+.education a:hover img {
+    transform: scale(1.1);
+}
+
+.skills {
+    text-align: center;
+    font-family: "Kalam", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.article2 {
+    float: left;
+    width: 49%;
+    text-align: center;
+    background-color: #e9edc9;
+    border-radius: 50px;
+    order: 1;
+    flex-grow: 1;
+    margin-right: 2%;
+    font-family: "Kalam", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+@property --percentage{
+    syntax: "<number>";
+    inherits: true;
+    initial-value: 0;
+}
+  
+@keyframes pieAni {
+    from {
+      --percentage: 0;
+    }
+}
+  
+.pie {
+    width: 150px;
+    aspect-ratio: 1;
+    display: inline-grid;
+    place-content: center;
+    margin: 5px;
+    font-family: "Kalam", cursive;
+    font-weight: 400;
+    font-style: normal;
+    position: relative;
+}
+
+.pie::before{
+    content: "";
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+    inset: 0;
+    background: conic-gradient(var(--color) calc(var(--percentage) * 1%),#0000 0%), #eee;
+    -webkit-mask-image: radial-gradient(farthest-side,#0000 calc(100% - 10px),#000 calc(100% - 10px));
+    mask-image: radial-gradient(farthest-side,#0000 calc(100% - 10px),#000 calc(100% - 10px));
+}
+
+.pie.ani{
+    animation-name: pieAni;
+    animation-duration: 2s;
+    animation-fill-mode: both;
+}
+
+.percentage {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #333;
+}
+
+.pie-container {
+    flex: 0 0 calc(100% / 3 - 40px);
+    margin: 20px;
+    text-align: center;
+}
+
+.pie-location {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.aside2 {
+    float: right;
+    width: 49%;
+    text-align: center;
+    background-color: #e9edc9;
+    border-radius: 50px;
+    order: 2;
+    flex-grow: 4;
+    font-family: "Kalam", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.experience {
+    text-align: center;
+    font-family: "Kalam", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+article {
+    width: 99%;
+    text-align: center;
+    background-color: #e9edc9;
+    border-radius: 50px;
+    order: 1;
+    flex-grow: 1;
+    margin-right: 2%;
+    font-family: "Kalam", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.psychology {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.video {
+    flex: 1;
+    text-align: left;
+    width: 50px;
+    padding-left: 100px;
+    margin: 0;
+}
+.halo_effect {
+    flex: 1;
+    width: 50px;
+    text-align: left;
+    padding-right: 100px;
+}
+
+.Factory {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.factory_photo {
+    flex: 1;
+    text-align: left;
+    width: 50px;
+    padding-left: 100px;
+    margin: 0;
+    margin-bottom: 20px; 
+}
+.factory_photo img {
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;  /* 添加的限制最大寬度 */
+    max-height: 400px;
+}
+.factory_text {
+    flex: 1;
+    width: 50px;
+    text-align: left;
+    padding-right: 100px;
+}
+.mySlides1 {
+    display: none;
+}
+
+.club {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.club_photo {
+    flex: 1;
+    text-align: left;
+    width: 50px;
+    padding-left: 100px;
+    margin: 0;
+    margin-bottom: 20px; 
+}
+.club_photo img {
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;  /* 添加的限制最大寬度 */
+    max-height: 400px;
+}
+.club_text {
+    flex: 1;
+    width: 50px;
+    text-align: left;
+    padding-right: 100px;
+}
+.mySlides2 {
+    display: none;
+}
+
+.sport {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sport_photo {
+    flex: 1;
+    text-align: left;
+    width: 50px;
+    padding-left: 100px;
+    margin: 0;
+    margin-bottom: 20px; 
+}
+.sport_photo img {
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;  /* 添加的限制最大寬度 */
+    max-height: 400px;
+}
+.sport_text {
+    flex: 1;
+    width: 50px;
+    text-align: left;
+    padding-right: 100px;
+}
+.mySlides3 {
+    display: none;
+}
+
+.basketball {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.basketball_photo {
+    flex: 1;
+    text-align: left;
+    width: 50%;
+    padding-left: 100px;
+    margin: 0;
+    margin-bottom: 20px; 
+}
+.basketball_photo img {
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;  /* 添加的限制最大寬度 */
+    max-height: 400px;
+}
+.mySlides4 {
+    display: none;
+}
+
+.basketball_text {
+    flex: 1;
+    width: 50px;
+    text-align: left;
+    padding-right: 100px;
+}
+
+.clearfix {
+    clear: both;
+}
+
+@media screen and (max-width:800px) {
+
+    article,
+    aside {
+        float: none;
+        width: 100%;
+    }
+
+    img {
+        max-width: 100%;
+        height: 90%;
+    }
+}
+
